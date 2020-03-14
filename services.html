@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Barba.js Page Transitions</title>
+
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+
+    <body data-barba="wrapper">
+        <ul class="transition">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <div class="wrapper">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./services.html">services</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <main data-barba="container" data-barba-namespace="home">
+            <div class="left">
+                <h1>Explore our services</h1>
+                <a href="./index.html" class="cta">Take me back</a>
+            </div>
+            <img
+                src="https://images.pexels.com/photos/1154619/pexels-photo-1154619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Random Image"
+            />
+        </main>
+
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
